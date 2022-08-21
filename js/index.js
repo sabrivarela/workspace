@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 9effebad7740d25709d8fd5b71b19aa17d8f333c
 document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("autos").addEventListener("click", function() {
         localStorage.setItem("catID", 101);
