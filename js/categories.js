@@ -140,5 +140,9 @@ document.addEventListener("DOMContentLoaded", function(e){
 
         showCategoriesList();
     });
+<<<<<<< HEAD
 });
 
+=======
+});
+>>>>>>> 9effebad7740d25709d8fd5b71b19aa17d8f333c
