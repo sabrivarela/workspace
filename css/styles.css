@@ -193,3 +193,24 @@ a.custom-card:hover {
 width: 350px;
 margin:auto;
 }
+
+
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+
+
+.cardBonito {
+  width: 30%;
+  height: 40%;
+  text-align: center;
+  margin: 15px;
+}
+.flex-container {
+  justify-content: flex-start;
+}
+

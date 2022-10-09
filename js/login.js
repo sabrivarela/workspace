@@ -1,17 +1,22 @@
 function showEError() {
   document.getElementById("email").classList.add("is-invalid");
+  document.getElementById("divE").innerText = "Ingresa un email";
 }
 function showPwError() {
   document.getElementById("password").classList.add("is-invalid");
+  document.getElementById("divP").innerText = "Ingresa una contraseña"; 
 }
 
 function success() {
   window.location.href = "index.html";
 }
 
+const email = document.getElementById("email");
 document.getElementById("form").addEventListener("submit", (e) => {
   e.preventDefault();
-  let email = document.getElementById("email").value;
+  localStorage.setItem("email", email.value);
+  //seteo el login aca con valor=3 
+  localStorage.setItem("login", 3);
   let pw = document.getElementById("password").value;
   if (pw.length === 0 && email.length === 0) {
     showEError();
@@ -26,25 +31,9 @@ document.getElementById("form").addEventListener("submit", (e) => {
   }
 });
 
-// if (email == sortedEmail){
-//     window.location.href = "index.html";
-// }else{
-//     wondow.location.href  = "login.html";
-// }
-// })´
-
-// function login(){
-//     localStorage.setItem("email", email.value);
-//     localStorage.setItem("pw", pw.value);
-
-// let storedName = localStorage.getItem("email");
-// let storedPw = localStorage.getItem("pw");
-// let userName = document.getElementById("userName");
-// let userPw = document.getElementById('userPw');
-
-// if(userName.value == storedName && userPw.value == storedPw){
-//     window.location.href="/";
-// }else{
-//     alert("Error on login");
-// }
-// }
+function holi(po)
+{localStorage.setItem("login",po)};
+let holis = localStorage.getItem("login")
+if (holis > 1){
+  window.location.replace("index.html");
+}

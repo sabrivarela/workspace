@@ -13,3 +13,9 @@ document.addEventListener("DOMContentLoaded", function(){
         window.location = "products.html"
     });
 });
+function holi(po)
+{localStorage.setItem("login",po)};
+let holis = localStorage.getItem("login")
+if (holis <= 0){
+    window.location.replace("login.html");
+}

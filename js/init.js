@@ -39,3 +39,11 @@ let getJSONData = function(url){
         return result;
     });
 }
+
+const nameDisplayed = document.getElementById("profileName");
+nameDisplayed.innerHTML = localStorage.getItem("email");
+
+function logout(){
+  localStorage.clear()
+  window.location.href= "login.html"
+}
